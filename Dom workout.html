@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dom workout</title>
+<meta rel="viewport"href="width=device-width,initial-scale=1.0">
+</head>
+<body>
+<button onclick="add()">touch me</button>
+
+<script>
+	
+	
+	function add(){
+	let sectionElement=document.createElement('section');
+	        document.body.appendChild(sectionElement);
+			
+    let containerElement=document.createElement('container');
+	        sectionElement.appendChild(containerElement);
+			
+	let divElement=document.createElement('div');
+		    containerElement.appendChild(divElement);
+			
+		let headElement=document.createElement('h1');
+		    headElement.innerText="Header section";
+			 divElement.appendChild(headElement);
+			 
+		let headElement1=document.createElement('h3');
+		    headElement1.innerText="Bettter digital experience with Presento";
+			 divElement.appendChild(headElement1);
+	
+	   let paraElement=document.createElement('p');
+	     paraElement.innerText="We are team of talented designers making websites with Bootstrap";
+		   divElement.appendChild(paraElement);
+		
+		
+		  
+		console.log(divElement);
+	}
+</script>
+</body>
+</html>
